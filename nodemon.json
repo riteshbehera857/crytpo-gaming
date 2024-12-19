@@ -1,0 +1,20 @@
+{
+	"watch": [
+		"affiliate",
+		"common",
+		"core",
+		"payment",
+		"wallet",
+		"kyc",
+		"events",
+		"notification",
+		"notifications",
+		"docs",
+		"demo",
+		"upload",
+		".env"
+	],
+	"ext": "js,ts,json",
+	"ignore": ["src/**/*.spec.ts"],
+	"exec": "ts-node  --transpile-only server.ts"
+}

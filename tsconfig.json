@@ -1,0 +1,40 @@
+{
+	"compilerOptions": {
+		"target": "ES2021",
+		"lib": ["es2017", "es2020", "esnext.asynciterable", "dom"],
+		// "typeRoots": ["./node_modules/@types", "./common/types/*"],
+		"rootDir": ".",
+		// "types": ["jest"],
+		"allowSyntheticDefaultImports": true,
+		"experimentalDecorators": true,
+		"emitDecoratorMetadata": true,
+		"forceConsistentCasingInFileNames": true,
+		"moduleResolution": "node",
+		"module": "commonjs",
+		"pretty": true,
+		"sourceMap": true,
+		"strict": false,
+		"outDir": "./dist",
+		"allowJs": true,
+		"noEmit": false,
+		"esModuleInterop": true,
+		"resolveJsonModule": true,
+		"strictPropertyInitialization": false
+	},
+	"include": [
+		"server.ts",
+		"./core/**/*",
+		"./wallet/**/*",
+		"./payment/**/*",
+		"./common/**/*",
+		"./bonus/**/*",
+		"./kyc/**/*",
+		"./events/**/*",
+		"./notifications/**/*",
+		"./upload/**/*",
+		"./affiliate/**/*",
+		"./demo/**/*",
+		"src/tests/**/*"
+	],
+	"exclude": ["node_modules"]
+}
