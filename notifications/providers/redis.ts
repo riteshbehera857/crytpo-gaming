@@ -10,12 +10,8 @@ export default class RedisClient {
 			config.redis.tls.toLowerCase() === 'false' ? false : true;
 
 		this.redisClient = createClient({
-			socket: {
-				host: config.redis.host,
-				port: Number(config.redis.port),
-				tls: tlsEnabled,
-			},
-		}).on('error', (err) => log.error(`Redis Client Error ${err}`));
+  url : "rediss://default:********@humorous-feline-22987.upstash.io:6379"
+}).on('error', (err) => log.error(`Redis Client Error ${err}`));
 		this.redisClient.connect();
 		log.info('Cache service initialized');
 	}
