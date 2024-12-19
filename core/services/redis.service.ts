@@ -16,12 +16,8 @@ class RedisService {
 
 		this.logger = getLogger(module);
 		this.client = createClient({
-			socket: {
-				host: config.redis.host,
-				port: Number(config.redis.port),
-				tls: tlsEnabled,
-			},
-		});
+  url : "rediss://default:********@humorous-feline-22987.upstash.io:6379"
+});
 	}
 
 	public static getInstance(): RedisService {

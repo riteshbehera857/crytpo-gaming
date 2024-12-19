@@ -13,12 +13,8 @@ export default class CacheService {
 		const tlsEnabled =
 			config.redis.tls.toLowerCase() === 'false' ? false : true;
 		this.redisClient = createClient({
-			socket: {
-				host: config.redis.host,
-				port: Number(config.redis.port),
-				tls: tlsEnabled,
-			},
-		}).on('error', (err) => log.error('Redis Client Error', err));
+  url : "rediss://default:********@humorous-feline-22987.upstash.io:6379"
+}).on('error', (err) => log.error('Redis Client Error', err));
 		this.redisClient.connect();
 		log.debug('Cache service initialized');
 	}
