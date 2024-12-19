@@ -16,7 +16,7 @@ class RedisService {
 
 		this.logger = getLogger(module);
 		this.client = createClient({
-  url : "rediss://default:********@humorous-feline-22987.upstash.io:6379"
+  url : "rediss://default:AVnLAAIjcDFkYzM2ODA5MDRmYWI0N2Y5YjgxNTMwNDRkODc0MjViMHAxMA@humorous-feline-22987.upstash.io:6379"
 });
 	}
 
