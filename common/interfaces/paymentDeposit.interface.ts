@@ -13,7 +13,7 @@ interface IPaymentDeposit {
 	transactionType: string;
 	responseId: string;
 	requestId: string;
-	walletAddress:string;
+	walletAddress: string;
 	deletedAt: Date;
 	amountWithCommission: number;
 	createdAt: Date;

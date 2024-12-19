@@ -10,6 +10,7 @@ class PaymentDeposit implements IPaymentDeposit {
 	userId: Schema.Types.ObjectId;
 	status: TransactionStatusEnum;
 	currency: CurrencyEnum;
+	walletAddress: string
 	amount: number;
 	transactionType: string;
 	responseId: string;
@@ -33,6 +34,7 @@ class PaymentDeposit implements IPaymentDeposit {
 		this.amountWithCommission = data.amountWithCommission;
 		this.createdAt = data.createdAt;
 		this.updatedAt = data.updatedAt;
+		this.walletAddress = data.walletAddress
 	}
 }
 

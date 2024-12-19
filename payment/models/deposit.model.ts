@@ -61,7 +61,7 @@ const paymentDepositSchema = new Schema<
 			required: true,
 		},
 		walletAddress:{
-			type:string,
+			type: String,
 		}
 	},
 	{
